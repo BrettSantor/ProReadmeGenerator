@@ -1,0 +1,22 @@
+{
+  "name": "proreadmegenerator",
+  "version": "1.0.0",
+  "description": "Generate a profession README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrettSantor/ProReadmeGenerator.git"
+  },
+  "author": "Brett Santor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrettSantor/ProReadmeGenerator/issues"
+  },
+  "homepage": "https://github.com/BrettSantor/ProReadmeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
