@@ -1,7 +1,7 @@
-# Final Test
-![badmath](https://img.shields.io/badge/license-GNU%20Affero%20General%20Public%20v3.0-blue)
+# Pro Readme Generator
+![badmath](https://img.shields.io/badge/license-MIT-blue)
 ## description
-Look at that badge
+This app generates a professional readme file
 ## Table of Contents 
  * [Installation](#installation)
 * [Usage](#usage)
@@ -12,17 +12,17 @@ Look at that badge
 * [Questions](#questions)
 
 ## Installation 
- no
+ you will need to install inquirer to use
 ## Usage 
- eh
+ you will need to launch with node
 ## Credits 
- me
+ none
 ## Contributions 
- no
+ n/a
 ## License 
- GNU Affero General Public v3.0
+ MIT
 ## Testing 
- no
+ n/a
 ## Questions 
  If you have any questions you can refer to my github at this link or email me! 
  * [Github](github.com/BrettSantor) 
