@@ -32,6 +32,13 @@ inquirer
         }
     },
     {
+        message: 'Please list any collaborators',
+        name: 'credits',
+        validate: function(input) {
+            return input !== ""
+        }
+    },
+    {
         message: 'Please give guidelines on how others can contribute to your project if applicable',
         name: 'contribution',
         validate: function(input) {
@@ -67,19 +74,50 @@ inquirer
     }
 ])
  .then((response) => {
-//     console.log(response.title + response.title + response.description + response.installation + response.usage + response.test + response.contribution + response.license + response.github + response.email)
-    //todo create md file
-    let projTitle = '# '+`${response.title}`
-    fs.writeFile('testREADME.md', projTitle, (err) => {
+    let projTitle = '# '+`${response.title}\n`
+    fs.writeFileSync('testreadme.md', projTitle, (err) => {
         if (err)
-        console.log(err);
+        console.log('oops '+err);
         else {
             console.log("it's alive!")
         }
     })
-    //todo append user input to file
-    //todo create thinks to github and email
-    //todo make table of contents clickable links to parts of the readme
-    //todo make liscense a drop down list
+
+    fs.appendFileSync('testreadme.md', '## description \n'+`${response.description}`, (err) => {
+        if (err)
+        console.log('oops '+err)})
+        
+    fs.appendFileSync('testreadme.md', '\n## Table of Contents \n * [Installation](#installation)\n* [Usage](#usage)\n* [Credits](#credits)\n* [Contributions](#contribution)\n* [License](#license)\n* [Testing](#Testing)\n* [Questions](#questions)\n', (err) => {
+        if (err)
+        console.log('oops '+err)})
+
+    fs.appendFileSync('testreadme.md', '\n## Installation \n '+`${response.installation}`, (err) => {
+        if (err)
+        console.log('oops '+err)})
+
+    fs.appendFileSync('testreadme.md', '\n## Usage \n '+`${response.usage}`, (err) => {
+        if (err)
+        console.log('oops '+err)})
+
+    fs.appendFileSync('testreadme.md', '\n## Credits \n '+`${response.credits}`, (err) => {
+        if (err)
+        console.log('oops '+err)})
+
+    fs.appendFileSync('testreadme.md', '\n## Contributions \n '+`${response.contribution}`, (err) => {
+        if (err)
+        console.log('oops '+err)})
+
+    fs.appendFileSync('testreadme.md', '\n## License \n '+`${response.license}`, (err) => {
+        if (err)
+        console.log('oops '+err)})
+
+    fs.appendFileSync('testreadme.md', '\n## Testing \n '+`${response.test}`, (err) => {
+        if (err)
+        console.log('oops '+err)})
+
+    fs.appendFileSync('testreadme.md', '\n## Questions \n '+'If you have any questions you can reach me at these links! \n'+" * [Github](github.com/"+`${response.github}`+') \n'+" * [Email]("+`${response.email}`+")", (err) => {
+        if (err)
+        console.log('oops '+err)})
+
     //! when liscense is selected create a badge of that option near the top of the readme
 })
