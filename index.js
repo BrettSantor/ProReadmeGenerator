@@ -70,7 +70,7 @@ inquirer
 //     console.log(response.title + response.title + response.description + response.installation + response.usage + response.test + response.contribution + response.license + response.github + response.email)
     //todo create md file
     let projTitle = '# '+`${response.title}`
-    fs.writeFile('README.md', projTitle, (err) => {
+    fs.writeFile('testREADME.md', projTitle, (err) => {
         if (err)
         console.log(err);
         else {
