@@ -49,7 +49,10 @@ inquirer
         type: 'checkbox',
         message: "Select a license",
         name: "license",
-        choices: ['None', 'Apache', 'GNU', 'MIT', 'BSD 2-Clause "Simplified"', 'BSD 3-Clause', 'Boost Software', 'Creative Commons Zero v1.0', 'Eclipse Public 2.0', 'GNU Affero General Public v3.0', 'GNU General Public', 'GNU Lesser General Public v2.1', 'Mozilla Public 2.0', 'The Unlicense']
+        choices: ['None', 'Apache', 'GNU', 'MIT', 'BSD 2-Clause "Simplified"', 'BSD 3-Clause', 'Boost Software', 'Creative Commons Zero v1.0', 'Eclipse Public 2.0', 'GNU Affero General Public v3.0', 'GNU General Public', 'GNU Lesser General Public v2.1', 'Mozilla Public 2.0', 'The Unlicense'],
+        validate: function(input) {
+            console.log('pick one')
+        }
     },
     {
         message: 'Please give instructions on how to test your project if applicable',
