@@ -77,7 +77,7 @@ inquirer
     let licenseString = response.license[0]
     let liBadge = licenseString.replaceAll(' ', '%20')
     let projTitle = '# '+`${response.title}\n`+'![badmath](https://img.shields.io/badge/license-'+liBadge+'-blue)\n'
-    fs.writeFileSync('generatedReadme.md', projTitle, (err) => {
+    fs.writeFileSync('createReadme.md', projTitle, (err) => {
         if (err)
         console.log('oops '+err);
         else {
@@ -85,39 +85,39 @@ inquirer
         }
     })
 
-    fs.appendFileSync('generatedReadme.md', '## description\n'+`${response.description}`, (err) => {
+    fs.appendFileSync('createReadme.md', '## description\n'+`${response.description}`, (err) => {
         if (err)
         console.log('oops '+err)})
         
-    fs.appendFileSync('generatedReadme.md', '\n## Table of Contents \n * [Installation](#installation)\n* [Usage](#usage)\n* [Credits](#credits)\n* [Contributions](#contribution)\n* [License](#license)\n* [Testing](#Testing)\n* [Questions](#questions)\n', (err) => {
+    fs.appendFileSync('createReadme.md', '\n## Table of Contents \n * [Installation](#installation)\n* [Usage](#usage)\n* [Credits](#credits)\n* [Contributions](#contribution)\n* [License](#license)\n* [Testing](#Testing)\n* [Questions](#questions)\n', (err) => {
         if (err)
         console.log('oops '+err)})
 
-    fs.appendFileSync('generatedReadme.md', '\n## Installation \n '+`${response.installation}`, (err) => {
+    fs.appendFileSync('createReadme.md', '\n## Installation \n '+`${response.installation}`, (err) => {
         if (err)
         console.log('oops '+err)})
 
-    fs.appendFileSync('generatedReadme.md', '\n## Usage \n '+`${response.usage}`, (err) => {
+    fs.appendFileSync('createReadme.md', '\n## Usage \n '+`${response.usage}`, (err) => {
         if (err)
         console.log('oops '+err)})
 
-    fs.appendFileSync('generatedReadme.md', '\n## Credits \n '+`${response.credits}`, (err) => {
+    fs.appendFileSync('createReadme.md', '\n## Credits \n '+`${response.credits}`, (err) => {
         if (err)
         console.log('oops '+err)})
 
-    fs.appendFileSync('generatedReadme.md', '\n## Contributions \n '+`${response.contribution}`, (err) => {
+    fs.appendFileSync('createReadme.md', '\n## Contributions \n '+`${response.contribution}`, (err) => {
         if (err)
         console.log('oops '+err)})
 
-    fs.appendFileSync('generatedReadme.md', '\n## License \n '+`${response.license}`, (err) => {
+    fs.appendFileSync('createReadme.md', '\n## License \n '+`${response.license}`, (err) => {
         if (err)
         console.log('oops '+err)})
 
-    fs.appendFileSync('generatedReadme.md', '\n## Testing \n '+`${response.test}`, (err) => {
+    fs.appendFileSync('createReadme.md', '\n## Testing \n '+`${response.test}`, (err) => {
         if (err)
         console.log('oops '+err)})
 
-    fs.appendFileSync('generatedReadme.md', '\n## Questions \n '+'If you have any questions you can refer to my github at this link or email me! \n'+" * [Github](github.com/"+`${response.github}`+') \n'+"* "+`${response.email}`, (err) => {
+    fs.appendFileSync('createReadme.md', '\n## Questions \n '+'If you have any questions you can refer to my github at this link or email me! \n'+" * [Github](github.com/"+`${response.github}`+') \n'+"* "+`${response.email}`, (err) => {
         if (err)
         console.log('oops '+err)})
 })

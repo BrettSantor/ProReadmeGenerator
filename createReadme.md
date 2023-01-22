@@ -1,7 +1,7 @@
 # Pro Readme Generator
 ![badmath](https://img.shields.io/badge/license-MIT-blue)
 ## description
-This app generates a professional readme file
+This will create a professional readme
 ## Table of Contents 
  * [Installation](#installation)
 * [Usage](#usage)
@@ -12,9 +12,9 @@ This app generates a professional readme file
 * [Questions](#questions)
 
 ## Installation 
- you will need to install inquirer to use
+ you will need to install inquirer
 ## Usage 
- you will need to launch with node
+ you will need to use node to launch
 ## Credits 
  none
 ## Contributions 
@@ -25,5 +25,5 @@ This app generates a professional readme file
  n/a
 ## Questions 
  If you have any questions you can refer to my github at this link or email me! 
- * [Github](github.com/BrettSantor) 
-* b.santor27@gmail.com
+ * [Github](github.com/ScoobyDoo) 
+* scooby@gmail.com
