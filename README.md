@@ -22,11 +22,16 @@ This app generates a professional readme file using prompts from Inquirer on the
 | inquirer | [https://github.com/SBoudrias/Inquirer.js#readme](https://github.com/SBoudrias/Inquirer.js#readme)     |  
 
 ## Installation 
- you will need to install inquirer to utilize this application
+ Node needs to be installed in order to run this application and you will also need to install inquirer to utilize this application. We are using version 8.2.4 of Inquirer in this application.
 ## Usage 
- you will need to launch with node in order to use this application
+ you will need to launch with node in order to use this application. 
+ ![nodeImput](/images/initializedNode.png)
+ Using require we can use nodes built in filesystem functions and inquirer for this application
+ ![require](/images/require.png)
+ ## Learning Points
+ Building this app allowed me to get some practice using node and npm to install new packages and putting them to use.
 ## Credits 
- none
+ All this coding made possible by [Jerome Chenette](https://github.com/jeromechenette) and my fellow students who help each other along the way
 ## Contributions 
  n/a
 ## License 
